@@ -13,7 +13,7 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="Leonardo_Phoenix_Create_a_futuristic_logo_for_a_Nodejs_course_3.jpg" alt="Logo" class="logo-img">
+                <img src="logo.png" alt="Logo" class="logo-img">
                 <span class="logo-text">Node.js 3024</span>
             </div>
             <ul class="nav-links">
@@ -28,12 +28,8 @@
 
     <main>
         <section id="home" class="hero">
-            <h1 class="glitch" data-text="Node.js 3024: Курс майбутнього">
-                Node.js 3024: Курс майбутнього
-            </h1>
-            <p class="subtitle">
-                Відкрийте для себе потужність серверного JavaScript у новому тисячолітті
-            </p>
+            <h1 class="glitch" data-text="Node.js 3024: Курс майбутнього">Node.js 3024: Курс майбутнього</h1>
+            <p class="subtitle">Відкрийте для себе потужність серверного JavaScript у новому тисячолітті</p>
             <button class="cta-button" id="start-journey">Почати подорож</button>
         </section>
 
@@ -87,25 +83,37 @@
         </section>
     </main>
 
-    <!-- Modal Template -->
-    <!-- Replace the modal template section in index.html with this updated version -->
-<div id="lesson-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="modal-title"></h2>
-        <div id="modal-content"></div>
-        <div class="code-section">
+    <div id="lesson-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-content"></div>
             <h3>Приклад коду:</h3>
-            <pre id="modal-code"><code></code></pre>
-            <div class="code-result">
-                <h3>Результат виконання:</h3>
-                <pre id="code-output"></pre>
-            </div>
+            <pre id="code-example"></pre>
+            <button id="run-code" class="cta-button">Запустити код</button>
+            <h3>Результат виконання:</h3>
+            <pre id="code-output"></pre>
+            <button id="start-test" class="cta-button">Пройти тестування</button>
         </div>
     </div>
-</div>
+    <div id="test-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Тестування</h2>
+            <div id="test-content"></div>
+            <button id="submit-test" class="cta-button">Відправити відповіді</button>
+        </div>
+    </div>
 
-    <!-- Toast Notification -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Результати тестування</h2>
+            <div id="test-results"></div>
+            <button id="retry-test" class="cta-button">Спробувати ще раз</button>
+        </div>
+    </div>
+
     <div id="toast" class="toast"></div>
 
     <footer>
@@ -125,12 +133,12 @@
             </div>
             <div class="footer-section">
                 <h3>Контакти</h3>
-                <p>Email: 24g_chvv@liceum.ztu.edu.ua</p>
+                <p>Email: future@nodejs3024.com</p>
                 <p>Телепатичний ID: #NodeJS3024</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Node.js Курс майбутнього. Всі права захищені.</p>
+            <p>&copy; 3024 Node.js Курс майбутнього. Всі права захищені.</p>
         </div>
     </footer>
 
