@@ -5,80 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js 3024: Курс майбутнього</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="stars"></div>
     <div class="twinkling"></div>
+    <div class="clouds"></div>
+
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
 
     <header>
         <nav>
             <div class="logo">
+                <div class="logo-icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
                 <span class="logo-text">Node.js 3024</span>
             </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-button">Головна</a></li>
-                <li><a href="#about" class="nav-button">Про курс</a></li>
-                <li><a href="#lessons" class="nav-button">Уроки</a></li>
-                <li><a href="#projects" class="nav-button">Проекти</a></li>
-                <li><a href="#contact" class="nav-button">Контакти</a></li>
+                <li><a href="#home" class="nav-button"><i class="fas fa-home"></i> Головна</a></li>
+                <li><a href="#about" class="nav-button"><i class="fas fa-info-circle"></i> Про курс</a></li>
+                <li><a href="#lessons" class="nav-button"><i class="fas fa-book"></i> Уроки</a></li>
+                <li><a href="#projects" class="nav-button"><i class="fas fa-project-diagram"></i> Проекти</a></li>
+                <li><a href="#contact" class="nav-button"><i class="fas fa-envelope"></i> Контакти</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1 class="glitch" data-text="Node.js 3024: Курс майбутнього">Node.js 3024: Курс майбутнього</h1>
-            <p class="subtitle">Відкрийте для себе потужність серверного JavaScript у новому тисячолітті</p>
-            <button class="cta-button" id="start-journey">Почати подорож</button>
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="glitch" data-text="Node.js 3024: Курс майбутнього">Node.js 3024: Курс майбутнього</h1>
+                <p class="subtitle">Відкрийте для себе потужність серверного JavaScript у новому тисячолітті</p>
+                <div class="cta-container">
+                    <button class="cta-button" id="start-journey">
+                        <span class="cta-text">Почати подорож</span>
+                        <span class="cta-icon"><i class="fas fa-rocket"></i></span>
+                    </button>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-particles"></div>
         </section>
 
         <section id="about">
-            <h2 class="section-title">Про курс</h2>
-            <div class="about-content">
-                <p>Node.js 3024 - це революційний курс, який підготує вас до викликів веб-розробки майбутнього. Ви вивчите:</p>
-                <br>
-                <ul class="feature-list">
-                    <li>Основи квантового програмування</li>
-                    <li>Нейромережеві мікросервіси</li>
-                    <li>Квантова теорія інформації</li>
-                </ul>
+            <h2 class="section-title" data-aos="fade-up">Про курс</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-text">
+                    <p>Node.js 3024 - це революційний курс, який підготує вас до викликів веб-розробки майбутнього. Ви вивчите:</p>
+                    <ul class="feature-list">
+                        <li data-aos="fade-right" data-aos-delay="300">
+                            <div class="feature-icon"><i class="fas fa-atom"></i></div>
+                            <div class="feature-content">
+                                <h3>Основи квантового програмування</h3>
+                                <p>Опануйте принципи квантових обчислень та їх застосування в сучасній розробці</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-delay="400">
+                            <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                            <div class="feature-content">
+                                <h3>Нейромережеві мікросервіси</h3>
+                                <p>Створюйте інтелектуальні системи з використанням нейронних мереж та мікросервісної архітектури</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-delay="500">
+                            <div class="feature-icon"><i class="fas fa-database"></i></div>
+                            <div class="feature-content">
+                                <h3>Квантова теорія інформації</h3>
+                                <p>Вивчіть принципи зберігання та обробки даних на квантовому рівні</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="300">
+                    <div class="floating-cube">
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face right"></div>
+                            <div class="face left"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-container" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-label">Студентів</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Уроків</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Проектів</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">% Задоволення</div>
+                </div>
             </div>
         </section>
 
         <section id="lessons">
-            <h2 class="section-title">Уроки майбутнього</h2>
-            <div id="lessons-container" class="lessons-grid">
-                <br>
+            <h2 class="section-title" data-aos="fade-up">Уроки майбутнього</h2>
+            <div class="lessons-filter" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-button active" data-filter="all">Всі уроки</button>
+                <button class="filter-button" data-filter="quantum">Квантове програмування</button>
+                <button class="filter-button" data-filter="neural">Нейромережі</button>
+                <button class="filter-button" data-filter="theory">Теорія інформації</button>
+            </div>
+            <div id="lessons-container" class="lessons-grid" data-aos="fade-up" data-aos-delay="300">
                 <!-- Lessons will be dynamically inserted here -->
             </div>
         </section>
 
         <section id="projects">
-            <h2 class="section-title">Проекти курсу</h2>
+            <h2 class="section-title" data-aos="fade-up">Проекти курсу</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="project-icon"><i class="fas fa-comments"></i></div>
                     <h3>Квантовий чат</h3>
                     <p>Створіть чат-додаток, який працює через квантову заплутаність для миттєвого міжгалактичного зв'язку.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Quantum API</span>
+                        <span>WebSockets</span>
+                    </div>
+                    <a href="#" class="project-link">Дізнатися більше <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="project-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Нейро-API</h3>
                     <p>Розробіть API, яке інтегрується безпосередньо з нейронною мережею користувача для інтуїтивної взаємодії.</p>
+                    <div class="project-tech">
+                        <span>Express.js</span>
+                        <span>TensorFlow</span>
+                        <span>GraphQL</span>
+                    </div>
+                    <a href="#" class="project-link">Дізнатися більше <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="project-icon"><i class="fas fa-cube"></i></div>
                     <h3>Голо-база</h3>
                     <p>Побудуйте голографічну базу даних для зберігання та візуалізації 4D-інформації.</p>
+                    <div class="project-tech">
+                        <span>MongoDB</span>
+                        <span>Three.js</span>
+                        <span>WebXR</span>
+                    </div>
+                    <a href="#" class="project-link">Дізнатися більше <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="projects-showcase" data-aos="zoom-in" data-aos-delay="500">
+                <div class="showcase-content">
+                    <h3>Проекти наших студентів</h3>
+                    <p>Перегляньте галерею проектів, створених випускниками нашого курсу</p>
+                    <button class="cta-button showcase-button">
+                        <span class="cta-text">Переглянути галерею</span>
+                        <span class="cta-icon"><i class="fas fa-images"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2 class="section-title" data-aos="fade-up">Відгуки студентів</h2>
+            <div class="testimonials-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Олена К.">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Цей курс повністю змінив моє уявлення про програмування. Тепер я працюю в космічному агентстві і розробляю квантові системи!"</p>
+                        <p class="testimonial-author">Олена К., випускниця 3022 року</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Максим П.">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Найкращі інвестиції в моє майбутнє. Після курсу я заснував стартап з розробки нейромережевих імплантів."</p>
+                        <p class="testimonial-author">Максим П., випускник 3023 року</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Анна С.">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Викладачі курсу - справжні професіонали з майбутнього. Вони навчили мене мислити на квантовому рівні!"</p>
+                        <p class="testimonial-author">Анна С., студентка</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2 class="section-title">Зв'яжіться з нами</h2>
-            <form id="contact-form" class="contact-form">
-                <input type="text" name="name" placeholder="Ваше ім'я" required>
-                <input type="email" name="email" placeholder="Ваш email" required>
-                <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
-                <button type="submit" class="submit-button">Надіслати</button>
-            </form>
+            <h2 class="section-title" data-aos="fade-up">Зв'яжіться з нами</h2>
+            <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Адреса</h3>
+                            <p>Квантова вежа, 42-й поверх<br>Київ, Україна, Земля</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@nodejs3024.ua">info@nodejs3024.ua</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Телепатичний ID</h3>
+                            <p>#NodeJS3024</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" data-aos="fade-left" data-aos-delay="300">
+                    <div class="form-group">
+                        <div class="form-icon"><i class="fas fa-user"></i></div>
+                        <input type="text" name="name" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-icon"><i class="fas fa-envelope"></i></div>
+                        <input type="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-icon"><i class="fas fa-comment"></i></div>
+                        <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>Надіслати</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -87,20 +317,50 @@
             <span class="close">&times;</span>
             <h2 id="modal-title"></h2>
             <div id="modal-content"></div>
-            <h3>Приклад коду:</h3>
-            <pre id="code-example"></pre>
-            <button id="run-code" class="cta-button">Запустити код</button>
+            <div class="code-container">
+                <h3>Приклад коду:</h3>
+                <div class="code-header">
+                    <span class="language-badge">JavaScript</span>
+                    <button class="copy-code-btn"><i class="fas fa-copy"></i></button>
+                </div>
+                <pre id="code-example"></pre>
+            </div>
+            <button id="run-code" class="cta-button">
+                <span class="cta-text">Запустити код</span>
+                <span class="cta-icon"><i class="fas fa-play"></i></span>
+            </button>
             <h3>Результат виконання:</h3>
             <pre id="code-output"></pre>
-            <button id="start-test" class="cta-button">Пройти тестування</button>
+            <button id="start-test" class="cta-button">
+                <span class="cta-text">Пройти тестування</span>
+                <span class="cta-icon"><i class="fas fa-tasks"></i></span>
+            </button>
         </div>
     </div>
+    
     <div id="test-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Тестування</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">Питання <span id="current-question">1</span> з <span id="total-questions">10</span></div>
+            </div>
             <div id="test-content"></div>
-            <button id="submit-test" class="cta-button">Відправити відповіді</button>
+            <div class="test-buttons">
+                <button id="prev-question" class="cta-button secondary" disabled>
+                    <i class="fas fa-arrow-left"></i> Попереднє
+                </button>
+                <button id="next-question" class="cta-button secondary">
+                    Наступне <i class="fas fa-arrow-right"></i>
+                </button>
+                <button id="submit-test" class="cta-button">
+                    <span class="cta-text">Відправити відповіді</span>
+                    <span class="cta-icon"><i class="fas fa-check"></i></span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -108,39 +368,97 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Результати тестування</h2>
+            <div class="result-summary">
+                <div class="result-score">
+                    <div class="score-circle">
+                        <div class="score-number">0%</div>
+                    </div>
+                    <div class="score-text">Ваш результат</div>
+                </div>
+            </div>
             <div id="test-results"></div>
-            <button id="retry-test" class="cta-button">Спробувати ще раз</button>
+            <div class="result-buttons">
+                <button id="retry-test" class="cta-button">
+                    <span class="cta-text">Спробувати ще раз</span>
+                    <span class="cta-icon"><i class="fas fa-redo"></i></span>
+                </button>
+                <button id="continue-learning" class="cta-button secondary">
+                    <span class="cta-text">Продовжити навчання</span>
+                    <span class="cta-icon"><i class="fas fa-graduation-cap"></i></span>
+                </button>
+            </div>
         </div>
     </div>
 
     <div id="toast" class="toast"></div>
 
     <footer>
+        <div class="footer-waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Node.js 3024</h3>
+                <div class="footer-logo">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js 3024</h3>
+                </div>
                 <p>Підготуйтеся до майбутнього веб-розробки.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
             </div>
             <div class="footer-section">
                 <h3>Швидкі посилання</h3>
                 <ul>
-                    <li><a href="#home">Головна</a></li>
-                    <li><a href="#about">Про курс</a></li>
-                    <li><a href="#lessons">Уроки</a></li>
-                    <li><a href="#projects">Проекти</a></li>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Головна</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> Про курс</a></li>
+                    <li><a href="#lessons"><i class="fas fa-chevron-right"></i> Уроки</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Проекти</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Навчальні ресурси</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Блог</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Документація</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Відеоуроки</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Спільнота</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Контакти</h3>
-                <p>Email: 24g_chvv@liceum.ztu.edu.ua</p>
-                <p>Телепатичний ID: #NodeJS3024</p>
+                <div class="contact-info-footer">
+                    <p><i class="fas fa-map-marker-alt"></i> Квантова вежа, 42-й поверх, Київ</p>
+                    <p><i class="fas fa-envelope"></i> info@nodejs3024.ua</p>
+                    <p><i class="fas fa-phone-alt"></i> +38 (012) 345-67-89</p>
+                    <p><i class="fas fa-brain"></i> Телепатичний ID: #NodeJS3024</p>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 3024 Node.js Курс майбутнього. Всі права захищені.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Політика конфіденційності</a>
+                <a href="#">Умови використання</a>
+                <a href="#">Карта сайту</a>
+            </div>
         </div>
     </footer>
 
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-rocket"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
